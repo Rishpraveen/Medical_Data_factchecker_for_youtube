@@ -1,0 +1,24 @@
+<!-- Tamil Medical Optimizer Icon - 16x16 -->
+<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle with gradient -->
+  <defs>
+    <linearGradient id="bgGradient16" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <circle cx="8" cy="8" r="8" fill="url(#bgGradient16)"/>
+  
+  <!-- Medical cross (smaller for 16px) -->
+  <rect x="6.5" y="4" width="3" height="8" fill="white" rx="0.5"/>
+  <rect x="4" y="6.5" width="8" height="3" fill="white" rx="0.5"/>
+  
+  <!-- Tamil letter "ta" (த) stylized -->
+  <path d="M2 3 C3 2, 5 2, 6 3 C6 4, 5 5, 4 5 C3 5, 2 4, 2 3 Z" fill="#ffd700" stroke="white" stroke-width="0.3"/>
+  
+  <!-- Ayurvedic leaf symbol -->
+  <ellipse cx="12" cy="12" rx="2" ry="1.5" fill="#4CAF50" transform="rotate(45 12 12)"/>
+  <path d="M11 11 Q12 10.5, 13 11" stroke="#2E7D32" stroke-width="0.5" fill="none"/>
+</svg>

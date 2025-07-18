@@ -1,0 +1,67 @@
+{
+  "name": "medical-youtube-optimizer-tamil-ayurveda",
+  "version": "2.0.0",
+  "description": "Enhanced medical content analysis for YouTube videos with Tamil language support and Ayurvedic medicine intelligence",
+  "main": "background.js",
+  "scripts": {
+    "build": "webpack --mode=production",
+    "dev": "webpack --mode=development --watch",
+    "setup": "npm install",
+    "test": "jest",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "validate": "npm run lint && npm run test"
+  },
+  "dependencies": {
+    "crypto-js": "^4.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "youtube-captions-scraper": "^2.0.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.23.0",
+    "@babel/preset-react": "^7.22.0",
+    "babel-loader": "^9.1.0",
+    "css-loader": "^6.8.0",
+    "eslint": "^8.55.0",
+    "jest": "^29.7.0",
+    "prettier": "^3.1.0",
+    "style-loader": "^3.3.0",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.0"
+  },
+  "keywords": [
+    "medical",
+    "youtube",
+    "health",
+    "privacy",
+    "chrome-extension",
+    "tamil",
+    "ayurveda",
+    "translation",
+    "herbal-medicine",
+    "traditional-medicine",
+    "healthcare",
+    "medical-analysis",
+    "content-verification",
+    "trusted-sources"
+  ],
+  "author": "Medical Data Optimization Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Rishpraveen/Medical_data_optimisation.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Rishpraveen/Medical_data_optimisation/issues"
+  },
+  "homepage": "https://github.com/Rishpraveen/Medical_data_optimisation#readme",
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "browserslist": [
+    "last 2 Chrome versions",
+    "last 2 Edge versions"
+  ]
+}

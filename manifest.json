@@ -1,0 +1,60 @@
+{
+  "manifest_version": 3,
+  "name": "Medical YouTube Optimizer",
+  "version": "1.0.0",
+  "description": "Privacy-preserving medical content analysis and personalized risk assessment for YouTube videos",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage",
+    "contextMenus",
+    "notifications",
+    "tabs"
+  ],
+  "host_permissions": [
+    "*://*.youtube.com/*",
+    "https://*.googleapis.com/*",
+    "https://api-inference.huggingface.co/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup_enhanced.html",
+    "default_icon": {
+      "16": "icon16.svg",
+      "32": "icon32.svg",
+      "48": "icon48.svg"
+    }
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "src/utils/*.js",
+        "src/ai/*.js",
+        "src/medicalAnalysis/*.js",
+        "fullpage.html",
+        "popup_enhanced.js",
+        "popup_enhanced.css"
+      ],
+      "matches": ["*://*.youtube.com/*"]
+    }
+  ],
+  "icons": {
+    "16": "icon16.svg",
+    "32": "icon32.svg",
+    "48": "icon48.svg",
+    "128": "icon128.svg"
+  }
+}

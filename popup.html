@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Medical YouTube Optimizer</title>
+  <link rel="stylesheet" href="popup.css">
+  <meta charset="UTF-8">
+</head>
+<body>
+  <div class="header">
+    <h1>🏥 Medical YouTube Optimizer</h1>
+    <div class="subtitle">AI-Powered Medical Content Analysis</div>
+  </div>
+  
+  <div id="processing-indicator" class="processing-indicator">
+    <div class="spinner"></div>
+    <span class="processing-text">Processing...</span>
+  </div>
+
+  <!-- Tab Navigation -->
+  <div class="tab-container">
+    <div class="tab-buttons">
+      <button class="tab-button active" id="tab-transcript">📄 Transcript</button>
+      <button class="tab-button" id="tab-comments">💬 Comments</button>
+      <button class="tab-button" id="tab-rag">🤖 Q&A</button>
+    </div>
+
+    <!-- Transcript Tab -->
+    <div id="tab-content-transcript" class="tab-content active">
+      <div class="button-row">
+        <button id="getTranscriptBtn" class="primary-btn">
+          <span class="btn-icon">📄</span>
+          Get Transcript
+        </button>
+        <button id="exportTranscriptBtn" class="export-btn" title="Export Transcript">
+          <span class="export-icon">⬇</span>
+        </button>
+      </div>
+      <div class="progress-container">
+        <div class="progress-bar"></div>
+      </div>
+      <div id="transcriptResult" class="result-area">
+        Transcript will appear here...
+      </div>
+    </div>
+
+    <!-- Comments Tab -->
+    <div id="tab-content-comments" class="tab-content">
+      <div class="button-row">
+        <button id="analyzeCommentsBtn" class="primary-btn">
+          <span class="btn-icon">💬</span>
+          Analyze Comments
+        </button>
+        <button id="exportCommentsBtn" class="export-btn" title="Export Comments">
+          <span class="export-icon">⬇</span>
+        </button>
+      </div>
+      <div class="progress-container">
+        <div class="progress-bar"></div>
+      </div>
+      <div id="commentResult" class="result-area">
+        Comment analysis will appear here...
+      </div>
+    </div>
+
+    <!-- RAG Tab -->
+    <div id="tab-content-rag" class="tab-content">
+      <div class="input-container">
+        <input type="text" id="ragQuery" placeholder="Ask a question about this video...">
+        <button id="analyzeWithRagBtn" class="primary-btn">Analyze</button>
+      </div>
+      <div class="button-row">
+        <button id="exportRagBtn" class="export-btn" title="Export Analysis">
+          <span class="export-icon">⬇</span>
+        </button>
+      </div>
+      <div class="progress-container">
+        <div class="progress-bar"></div>
+      </div>
+      <div id="ragResult" class="result-area">
+        RAG analysis will appear here...
+      </div>
+    </div>
+  </div>
+
+  <div id="status" class="status-area">Ready. Ensure API keys are set in options.</div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
