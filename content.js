@@ -1457,8 +1457,8 @@ function setupContextMenuIntegration() {
     });
 }
 
-// Enhanced video change observer
-function observeVideoChanges() {
+// Enhanced video change observer (optimized version)
+function observeVideoChangesOptimized() {
     let currentVideoId = getYouTubeVideoId();
     
     // Watch for URL changes
